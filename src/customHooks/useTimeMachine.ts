@@ -33,5 +33,5 @@ export const useTimeMachine = (stateToKeepTrack: number | undefined) => {
     return states.current[newPosition];
   }
 
-  return [position, states.current.length, getValueInTimeN] as [number, number, Function];
+  return [position, states.current.length, getValueInTimeN] as [number, number, (action: string) => number];
 }
