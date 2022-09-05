@@ -54,13 +54,6 @@ function Grid() {
 
   function onClickAction(action: string) {
     updateStyle(getPreviousValue(action));
-
-    if (action === 'previous') {
-
-    } else if (action === 'resume') {
-      setClickDivAllowed(true);
-    }
-
   }
 
   //render a grid of 4x4 squares
